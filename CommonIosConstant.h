@@ -38,7 +38,7 @@ Dynamic_Property_Setter( ObjectType , property , setProperty , OBJC_ASSOCIATION_
 /*  */}
 //////// Setter ////////
 #define Dynamic_Block_Setter( Key , BlockDefineType , BlockName , setBlockName , OBJC_ASSOCIATION_RETAIN_NONATOMIC )\
-/*  */-(void)setBlockName:( BlockDefineType )BlockName{\
+/*  */-(void)setBlockName( BlockDefineType )BlockName{\
 /*    */objc_setAssociatedObject( self , Key , BlockName , OBJC_ASSOCIATION_RETAIN_NONATOMIC );\
 /*  */}
 ////////////////////////////////
